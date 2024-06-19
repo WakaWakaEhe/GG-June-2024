@@ -10,8 +10,9 @@
 }
 
 body {
-    background-image: url(/pages/recipe-img/recipe-bg-liyue.webp);
+    background-image: url(/pages/recipe-img/recipe-bg-sumeru.webp);
     background-color: antiquewhite;
+    background-size: cover;
     min-height: 100vh;
     font-family: 'Outfit', sans-serif;
     line-height: 1.4;
@@ -112,6 +113,28 @@ ul li span {
 
 .instructions .item p span {
     font-weight: 700;
+}
+
+/* Back Button Styles */
+.back-button {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.back-button .btn {
+    padding: 10px 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 25px;
+    color: var(--main-color);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.back-button .btn:hover {
+    background: var(--main-color);
+    color: #fff;
 }
 
 @media (max-width: 540px){

@@ -8,8 +8,8 @@ function Shop() {
   return (
     <section className="shop" id="shop">
       <div className="heading">
-        <span>View Regions</span>
-        <h1>View Recipes</h1>
+        <span>View Now</span>
+        <h1>Every dish tells a story of flavor and tradition</h1>
       </div>
       <div className="region-container">
         <div className="box">

@@ -18,12 +18,9 @@ function About() {
           and food lovers alike.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Venim illo pa
-          met consectetur adipiscing elit. Venim illo pa
+        Whether it's the savory delicacies of Liyue, the comforting dishes of Inazuma, 
+        or the exotic flavors of Sumeru, we invite you to embark on a culinary adventure and experience the magic of Teyvat with every bite.
         </p>
-        <a href="#" className="btn">
-          About Us{" "}
-        </a>
       </div>
     </section>
   );

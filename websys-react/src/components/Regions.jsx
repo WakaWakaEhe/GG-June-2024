@@ -20,8 +20,8 @@ function Region() {
             traditional recipes.{" "}
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Venim illo
-            pa met consectetur adipiscing elit. Venim illo pa
+          Join us as we bring the authentic tastes of Genshin Impact’s most beloved 
+          regions to your table, capturing the essence of each unique culture through its traditional cuisine.
           </p>
           <a href="#" className="btn">
             Regions

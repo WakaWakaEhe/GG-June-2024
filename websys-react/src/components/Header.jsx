@@ -1,28 +1,62 @@
-import React, { useState } from 'react';
-import logo from '../img2/logo.webp';
-import '../styles/style.css';
-import '../main.js';
+import { useState, useEffect, useRef } from "react";
+import logo from "../img2/logo.webp";
+import "../styles/style.css";
 
 function Head() {
   // State to manage menu visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+  const navBarRef = useRef(null);
 
   // Function to toggle menu
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((is) => !is);
   };
+
+  const handleScroll = () => {
+    menuRef.current.classList.remove("bx-x"); // Ensure the icon resets on scroll (optional)
+    navBarRef.current.classList.remove("active"); // Hide the navbar on scroll
+    setIsMenuOpen(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", undefined);
+    };
+  }, []); // Empty array ensures this effect runs only on mount and unmount
 
   return (
     <header>
-      <a href="#" className="logo"><img src={logo} alt=""/></a>
-      <div className="bx bx-menu" id="menu-icon" onClick={toggleMenu}></div>
+      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+      <a href="#" className="logo">
+        <img src={logo} alt="" />
+      </a>
+      <div
+        ref={menuRef}
+        className={`bx bx-menu ${isMenuOpen && "bx-x"}`}
+        id="menu-icon"
+        onClick={toggleMenu}
+      ></div>
       {/* Conditional rendering of menu based on isMenuOpen state */}
-      <ul className={`navbar ${isMenuOpen ? 'open' : ''}`}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#recipes">Recipes</a></li>
-        <li><a href="#regions">Regions</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul ref={navBarRef} className={`navbar ${isMenuOpen && "active"}`}>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#recipes">Recipes</a>
+        </li>
+        <li>
+          <a href="#regions">Regions</a>
+        </li>
+        <li>
+          <a href="#about">About Us</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </header>
   );

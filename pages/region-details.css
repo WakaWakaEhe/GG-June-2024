@@ -44,7 +44,8 @@ header {
     transition: 0.2s;
 }
 
-.home {
+/*INAZUMA BG LIYUE ETC.*/
+.region-liyue-home {
     width: 100%;
     min-height: 100vh;
     background: url('recipe-img/region-bg-liyue.webp') no-repeat center center/cover;
@@ -54,28 +55,44 @@ header {
     gap: 1rem;
 }
 
-.home-text {
+/*INAZUMA BG IMAGE ETC.*/
+.region-inazuma-home {
+    width: 100%;
+    min-height: 100vh;
+    background: url('recipe-img/region-bg-inazuma.webp') no-repeat center center/cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.region-liyue-home-text,
+.region-inazuma-home-text {
     flex: 1 1 17rem;
 }
 
-.home-img {
+.region-liyue-home-img,
+.region-inazuma-home-img {
     flex: 1 1 17rem;
 }
 
-.home-text span {
+.region-liyue-home-text span,
+.region-inazuma-home-text span {
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 600;
     color: var(--second-color)
 }
 
-.home-text h1 {
+.region-liyue-home-text h1,
+.region-inazuma-home-text h1 {
     font-size: 3.2rem;
     color: var(--main-color);
     font-weight: bolder;
 }
 
-.home-text h2 {
+.region-liyue-home-text h2,
+.region-inazuma-home-text h2 {
     font-size: 1.8rem;
     font-weight: 600;
     color: var(--second-color);
@@ -104,32 +121,42 @@ header {
 }
 
 .liyue-first-article-img,
-.liyue-second-article-img {
+.liyue-second-article-img,
+.inazuma-first-article-img,
+.inazuma-second-article-img {
     flex: 1 1 21rem;
 }
 
 .liyue-first-article-text,
-.liyue-second-article-text {
+.liyue-second-article-text,
+.inazuma-first-article-text,
+.inazuma-second-article-text  {
     flex: 1 1 21rem;
 }
 
 .liyue-first-article-text h2,
-.liyue-second-article-text h2 {
+.liyue-second-article-text h2,
+.inazuma-first-article-text h2,
+.inazuma-second-article-text h2 {
     font-size: 1.2rem;
     color: var(--second-color);
 }
 
-.liyue-first-articlee-text p,
-.liyue-second-article-text p {
+.liyue-first-article-text p,
+.liyue-second-article-text p,
+.inazuma-first-article-text p,
+.inazuma-second-article-text p {
     margin: 0.5rem 0 1rem;
     text-align: justify;
 }
 
-.liyue-first-article {
+.liyue-first-article,
+.inazuma-first-article {
     background: #ebdbc8;
 }
 
-.liyue-third-article {
+.liyue-third-article,
+.inazuma-third-article {
     display: flex;
     flex-wrap: wrap;
     background: #ebdbc8;
@@ -137,16 +164,20 @@ header {
 }
 
 .liyue-third-article-img,
-.liyue-third-article-text {
+.liyue-third-article-text,
+.inazuma-third-article-img,
+.inazuma-third-article-text {
     flex: 1 1 17rem;
 }
 
-.liyue-third-article-text h2 {
+.liyue-third-article-text h2,
+.inazuma-third-article-text h2 {
     font-size: 1.2rem;
     color: var(--second-color);
 }
 
-.liyue-third-article-text p {
+.liyue-third-article-text p,
+.inazuma-third-article-text p {
     margin: 0.5rem 0 1rem;
     text-align: justify;
 }
@@ -201,11 +232,13 @@ header {
         padding: 50px 7%;
     }
 
-    .home-text h1 {
+    .region-liyue-home-text h1,
+    .region-inazuma-home-text h1 {
         font-size: 3rem;
     }
 
-    .home-text h2 {
+    .region-liyue-home-text h2,
+    .region-inazuma-home-text h2 {
         font-size: 1.5rem;
     }
 }
@@ -225,21 +258,25 @@ header {
         padding: 11px 4%;
     }
 
-    .home-text span {
+    .region-liyue-home-text span,
+    .region-inazuma-home-text span {
         font-size: 0.9rem;
     }
 
-    .home-text h1 {
+    .region-liyue-home-text h1,
+    .region-inazuma-home-text h1 {
         font-size: 2.4rem;
     }
 
-    .home-text h2 {
+    .region-liyue-home-text h2,
+    .region-inazuma-home-text h2 {
         font-size: 1.2rem;
     }
 }
 
 @media (max-width: 768px) {
-    .home-text {
+    .region-liyue-home-text,
+    .region-inazuma-home-text {
         padding-top: inherit;
     }
 

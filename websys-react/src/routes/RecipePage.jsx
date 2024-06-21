@@ -9,11 +9,11 @@ export default function RecipePage() {
     <>
       <RecipePageStyle />
       <Head />
-      <section class="dishes" id="dishes">
-        <h2 class="heading"> Our Recipes </h2>
-        <div class="box-container">
+      <section className="dishes" id="dishes">
+        <h2 className="heading"> Our Recipes </h2>
+        <div className="box-container">
           {dishes.map((dish) => (
-            <div className="box">
+            <div className="box" key={dish.id}>
               <img src={dish.image} alt="" />
               <h3>{dish.title}</h3>
               <span>{dish.description}</span>

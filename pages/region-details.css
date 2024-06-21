@@ -1,341 +1,219 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-padding-top: 2rem;
-    text-decoration: none;
-    list-style: none;
-    scroll-behavior: smooth;
-    font-family: "Poppins", sans-serif;
-}
-
-:root {
-    --main-color: #C48042;
-    --second-color: #8D3915;
-}
-
-section {
-    padding: 50px 10%;
-}
-
-*::selection {
-    color: #fff;
-    background: var(--main-color);
-}
-
-img {
-    width: 100%;
-}
-
 header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #fff;
-    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
-    padding: 15px 10%;
-    transition: 0.2s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+  padding: 15px 10%;
+  transition: 0.2s;
 }
 
-/*INAZUMA BG LIYUE ETC.*/
-.region-liyue-home {
-    width: 100%;
-    min-height: 100vh;
-    background: url('recipe-img/region-bg-liyue.webp') no-repeat center center/cover;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
+/*INAZUMA BG */
+.region-home {
+  width: 100%;
+  min-height: 100vh;
+  background: url("recipe-img/region-bg-liyue.webp") no-repeat center
+    center/cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
 }
 
-/*INAZUMA BG IMAGE ETC.*/
-.region-inazuma-home {
-    width: 100%;
-    min-height: 100vh;
-    background: url('recipe-img/region-bg-inazuma.webp') no-repeat center center/cover;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
+.region-home-text,
+.region-home-img {
+  flex: 1 1 17rem;
 }
 
-/*SUMERU BG IMAGE ETC.*/
-.region-sumeru-home {
-    width: 100%;
-    min-height: 100vh;
-    background: url('recipe-img/region-bg-sumeru.webp') no-repeat center center/cover;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
+.region-home-text span {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--second-color);
 }
 
-.region-liyue-home-text,
-.region-inazuma-home-text,
-.region-sumeru-home-text {
-    flex: 1 1 17rem;
+.region-home-text h1 {
+  font-size: 3.2rem;
+  color: var(--main-color);
+  font-weight: bolder;
 }
 
-.region-liyue-home-img,
-.region-inazuma-home-img,
-.region-sumeru-home-img {
-    flex: 1 1 17rem;
-}
-
-.region-liyue-home-text span,
-.region-inazuma-home-text span,
-.region-sumeru-home-text span {
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: var(--second-color)
-}
-
-.region-liyue-home-text h1,
-.region-inazuma-home-text h1,
-.region-sumeru-home-text h1 {
-    font-size: 3.2rem;
-    color: var(--main-color);
-    font-weight: bolder;
-}
-
-.region-liyue-home-text h2,
-.region-inazuma-home-text h2,
-.region-sumeru-home-text h2  {
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: var(--second-color);
-    text-transform: uppercase;
-    margin: 0.5rem 0 1.4rem;
+.region-home-text h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--second-color);
+  text-transform: uppercase;
+  margin: 0.5rem 0 1.4rem;
 }
 
 .btn {
-    padding: 7px 16px;
-    border: 2px solid var(--second-color);
-    border-radius: 40px;
-    color: var(--second-color);
-    font-weight: 500;
+  padding: 7px 16px;
+  border: 2px solid var(--second-color);
+  border-radius: 40px;
+  color: var(--second-color);
+  font-weight: 500;
 }
 
 .btn:hover {
-    color: #fff;
-    background: var(--second-color);
+  color: #fff;
+  background: var(--second-color);
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-.liyue-first-article-img,
-.liyue-second-article-img,
-.inazuma-first-article-img,
-.inazuma-second-article-img,
-.sumeru-first-article-img,
-.sumeru-second-article-img {
-    flex: 1 1 21rem;
+.article-img,
+.article-text {
+  flex: 1 1 21rem;
 }
 
-.liyue-first-article-text,
-.liyue-second-article-text,
-.inazuma-first-article-text,
-.inazuma-second-article-text,
-.sumeru-first-article-text,
-.sumeru-second-article-text  {
-    flex: 1 1 21rem;
+.article-text h2 {
+  font-size: 1.2rem;
+  color: var(--second-color);
 }
 
-.liyue-first-article-text h2,
-.liyue-second-article-text h2,
-.inazuma-first-article-text h2,
-.inazuma-second-article-text h2,
-.sumeru-first-article-text h2,
-.sumeru-second-article-text h2 {
-    font-size: 1.2rem;
-    color: var(--second-color);
+.article-text p {
+  margin: 0.5rem 0 1rem;
+  text-align: justify;
 }
 
-.liyue-first-article-text p,
-.liyue-second-article-text p,
-.inazuma-first-article-text p,
-.inazuma-second-article-text p,
-.sumeru-first-article-text p,
-.sumeru-second-article-text p  {
-    margin: 0.5rem 0 1rem;
-    text-align: justify;
+.last-article-img,
+.last-article-text {
+  flex: 1 1 17rem;
 }
 
-.liyue-first-article,
-.inazuma-first-article,
-.sumeru-first-article  {
-    background: #ebdbc8;
+.first-article,
+.last-article {
+  background: #ebdbc8;
 }
 
-.liyue-third-article,
-.inazuma-third-article,
-.sumeru-third-article {
-    display: flex;
-    flex-wrap: wrap;
-    background: #ebdbc8;
-    gap: 1.5rem;
-}
-
-.liyue-third-article-img,
-.liyue-third-article-text,
-.inazuma-third-article-img,
-.inazuma-third-article-text,
-.sumeru-third-article-img,
-.sumeru-third-article-text {
-    flex: 1 1 17rem;
-}
-
-.liyue-third-article-text h2,
-.inazuma-third-article-text h2,
-.sumeru-third-article-text h2 {
-    font-size: 1.2rem;
-    color: var(--second-color);
-}
-
-.liyue-third-article-text p,
-.inazuma-third-article-text p,
-.sumeru-third-article-text p {
-    margin: 0.5rem 0 1rem;
-    text-align: justify;
+.last-article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .social a {
-    font-size: 27px;
-    margin: 0.5rem;
+  font-size: 27px;
+  margin: 0.5rem;
 }
 
 .social a .bx {
-    padding: 5px;
-    color: #fff;
-    background: #8D3915;
-    border-radius: 50%;
+  padding: 5px;
+  color: #fff;
+  background: #8d3915;
+  border-radius: 50%;
 }
 
 .social a .bx:hover {
-    background: var(--main-color);
+  background: var(--main-color);
 }
 
 .links {
-    margin: 1rem 0 1rem;
+  margin: 1rem 0 1rem;
 }
 
 .links a {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--second-color);
-    padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--second-color);
+  padding: 1rem;
 }
 
 .links a:hover {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 .contact p {
-    text-align: center;
+  text-align: center;
 }
 
 @media (max-width: 1150px) {
-    header {
-        padding: 18px 7%;
-    }
+  header {
+    padding: 18px 7%;
+  }
 
-    section {
-        padding: 50px 7%;
-    }
+  section {
+    padding: 50px 7%;
+  }
 
-    .region-liyue-home-text h1,
-    .region-inazuma-home-text h1,
-    .region-sumeru-home-text h1 {
-        font-size: 3rem;
-    }
+  .region-home-text h1 {
+    font-size: 3rem;
+  }
 
-    .region-liyue-home-text h2,
-    .region-inazuma-home-text h2,
-    .region-sumeru-home-text h2 {
-        font-size: 1.5rem;
-    }
+  .region-home-text h2 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 991px) {
-    header {
-        padding: 18px 4%;
-    }
+  header {
+    padding: 18px 4%;
+  }
 
-    section {
-        padding: 50px 4%;
-    }
+  section {
+    padding: 50px 4%;
+  }
 }
 
 @media (max-width: 768px) {
-    header {
-        padding: 11px 4%;
-    }
+  header {
+    padding: 11px 4%;
+  }
 
-    .region-liyue-home-text span,
-    .region-inazuma-home-text span,
-    .region-sumeru-home-text span {
-        font-size: 0.9rem;
-    }
+  .region-home-text span {
+    font-size: 0.9rem;
+  }
 
-    .region-liyue-home-text h1,
-    .region-inazuma-home-text h1,
-    .region-sumeru-home-text h1 {
-        font-size: 2.4rem;
-    }
+  .region-home-text h1 {
+    font-size: 2.4rem;
+  }
 
-    .region-liyue-home-text h2,
-    .region-inazuma-home-text h2,
-    .region-sumeru-home-text h2 {
-        font-size: 1.2rem;
-    }
+  .region-home-text h2 {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .region-liyue-home-text,
-    .region-inazuma-home-text,
-    .region-sumeru-home-text {
-        padding-top: inherit;
-    }
+  .region-home-text {
+    padding-top: inherit;
+  }
 
-    .shop-container .box {
-        margin-top: 6rem;
-    }
+  .shop-container .box {
+    margin-top: 6rem;
+  }
 
-    .heading h1 {
-        font-size: 1.5rem;
-    }
+  .heading h1 {
+    font-size: 1.5rem;
+  }
 
-    .heading span {
-        font-size: 0.9rem;
-    }
+  .heading span {
+    font-size: 0.9rem;
+  }
 
-    .third-article {
-        flex-direction: column-reverse;
-    }
+  .last-article {
+    flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 364px) {
-    .links {
-        display: flex;
-        flex-direction: column;
-    }
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
 }

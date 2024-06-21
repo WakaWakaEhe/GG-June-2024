@@ -23,7 +23,7 @@ function Shop() {
             <i className="bx bxs-star"></i>
           </div>
           <h2>Liyue</h2>
-          <a href="#" className="btn">
+          <a href={"/regions/1"} className="btn">
             View Region
           </a>
         </div>
@@ -40,7 +40,7 @@ function Shop() {
             <i className="bx bxs-star"></i>
           </div>
           <h2>Inazuma</h2>
-          <a href="#" className="btn">
+          <a href={"/regions/2"} className="btn">
             View Region
           </a>
         </div>
@@ -57,7 +57,7 @@ function Shop() {
             <i className="bx bxs-star"></i>
           </div>
           <h2>Sumeru</h2>
-          <a href="#" className="btn">
+          <a href={"/regions/3"} className="btn">
             View Region
           </a>
         </div>

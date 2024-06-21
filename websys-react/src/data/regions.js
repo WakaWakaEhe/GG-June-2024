@@ -14,16 +14,21 @@ import sumeruArticle1 from "../img2/sumeru-first-article-img-1.webp";
 import sumeruArticle2 from "../img2/sumeru-second-article-img-2.webp";
 import sumeruArticle3 from "../img2/sumeru-third-article-img-3.webp";
 
+import liyueBg from "../img2/region-bg-liyue.webp";
+import inazumaBg from "../img2/region-bg-inazuma.webp";
+import sumeruBg from "../img2/region-bg-sumeru.webp";
+
 const regions = [
   {
     id: 1,
     name: "Liyue",
     symbol: liyueSymbol,
+    background: liyueBg,
     articles: [
       {
         id: 1,
         title: "The Bounty of Liyue's Land and Sea",
-        content: `Liyue, a region of abundant natural resources, is deeply influenced
+        content1: `Liyue, a region of abundant natural resources, is deeply influenced
             by its diverse landscapes that range from towering mountains to the
             bountiful ocean. The rich soil and favorable climate support a
             variety of crops, including rice, lotus seeds, and diverse
@@ -52,14 +57,14 @@ const regions = [
         id: 3,
         title: "The Spice of Trade",
         content1: `As a major trading hub in Teyvat, Liyue's cuisine is a melting pot of
-        flavors and techniques from distant lands. The influx of exotic
-        spices, such as star anise and Sichuan pepper, has enriched the local
-        cuisine, adding layers of complexity to traditional dishes. The port
-        city's openness to new influences is reflected in its vibrant food
-        markets, where a diverse array of ingredients and spices are
-        available.`,
+            flavors and techniques from distant lands. The influx of exotic
+            spices, such as star anise and Sichuan pepper, has enriched the local
+            cuisine, adding layers of complexity to traditional dishes. The port
+            city's openness to new influences is reflected in its vibrant food
+            markets, where a diverse array of ingredients and spices are
+            available.`,
         content2: `This blend of local and foreign elements results in a unique culinary
-        identity that embraces both tradition and innovation.`,
+            identity that embraces both tradition and innovation.`,
         image: liyueArticle3,
       },
     ],
@@ -68,6 +73,7 @@ const regions = [
     id: 2,
     name: "Inazuma",
     symbol: inazumaSymbol,
+    background: inazumaBg,
     articles: [
       {
         id: 1,
@@ -119,6 +125,7 @@ const regions = [
     id: 3,
     name: "Sumeru",
     symbol: sumeruSymbol,
+    background: sumeruBg,
     articles: [
       {
         id: 1,

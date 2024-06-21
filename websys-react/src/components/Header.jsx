@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import logo from "../img2/logo.webp";
 
 function Head() {
@@ -6,6 +7,8 @@ function Head() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const navBarRef = useRef(null);
+
+  const location = useLocation();
 
   // Function to toggle menu
   const toggleMenu = () => {
@@ -30,7 +33,7 @@ function Head() {
   return (
     <header>
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a href={"/"} className="logo">
+      <a href={location.pathname === "/" ? "#" : "/"} className="logo">
         <img src={logo} alt="" />
       </a>
       <div
@@ -42,19 +45,23 @@ function Head() {
       {/* Conditional rendering of menu based on isMenuOpen state */}
       <ul ref={navBarRef} className={`navbar ${isMenuOpen && "active"}`}>
         <li>
-          <a href={"/"}>Home</a>
+          <a href={location.pathname === "/" ? "#" : "/"}>Home</a>
         </li>
         <li>
           <a href="#recipes">Recipes</a>
         </li>
         <li>
-          <a href="#regions">Regions</a>
+          <a href={location.pathname === "/" ? "#shop" : "/#shop"}>Regions</a>
         </li>
         <li>
-          <a href="#about">About Us</a>
+          <a href={location.pathname === "/" ? "#about" : "/#about"}>
+            About Us
+          </a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href={location.pathname === "/" ? "#contact" : "/#contact"}>
+            Contact
+          </a>
         </li>
       </ul>
     </header>

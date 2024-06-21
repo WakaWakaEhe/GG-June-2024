@@ -34,7 +34,10 @@ function Head() {
   return (
     <header>
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a href={location.pathname === "/" ? "#" : "/"} className="logo">
+      <a
+        href={location.pathname === "/verdida-viola" ? "#" : "/verdida-viola"}
+        className="logo"
+      >
         <img src={logo} alt="" />
       </a>
       <div

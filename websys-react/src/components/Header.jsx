@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
-// import { HashLink } from "react-router-hash-link";
 import logo from "../img2/logo.webp";
+import { HashLink } from "react-router-hash-link";
 
 function Head() {
   // State to manage menu visibility
@@ -34,12 +34,12 @@ function Head() {
   return (
     <header>
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a
-        href={location.pathname === "/verdida-viola" ? "#" : "/verdida-viola"}
+      <HashLink
+        to={location.pathname === "/verdida-viola" ? "#" : "/verdida-viola"}
         className="logo"
       >
         <img src={logo} alt="" />
-      </a>
+      </HashLink>
       <div
         ref={menuRef}
         className={`bx bx-menu ${isMenuOpen && "bx-x"}`}
@@ -49,37 +49,47 @@ function Head() {
       {/* Conditional rendering of menu based on isMenuOpen state */}
       <ul ref={navBarRef} className={`navbar ${isMenuOpen && "active"}`}>
         <li>
-          <a
-            href={
-              location.pathname === "/verdida-viola" ? "#" : "/verdida-viola"
-            }
+          <HashLink
+            to={location.pathname === "/verdida-viola" ? "#" : "/verdida-viola"}
           >
             Home
-          </a>
+          </HashLink>
         </li>
         <li>
-          <a href="#recipes">Recipes</a>
+          <HashLink to="#recipes">Recipes</HashLink>
         </li>
         <li>
-          <a href={location.pathname === "/verdida-viola" ? "#shop" : "/#shop"}>
+          <HashLink
+            to={
+              location.pathname === "/verdida-viola"
+                ? "#shop"
+                : "/verdida-viola#shop"
+            }
+          >
             Regions
-          </a>
+          </HashLink>
         </li>
         <li>
-          <a
-            href={location.pathname === "/verdida-viola" ? "#about" : "/#about"}
+          <HashLink
+            to={
+              location.pathname === "/verdida-viola"
+                ? "#about"
+                : "/verdida-viola#about"
+            }
           >
             About Us
-          </a>
+          </HashLink>
         </li>
         <li>
-          <a
-            href={
-              location.pathname === "/verdida-viola" ? "#contact" : "/#contact"
+          <HashLink
+            to={
+              location.pathname === "/verdida-viola"
+                ? "#contact"
+                : "/verdida-viola#contact"
             }
           >
             Contact
-          </a>
+          </HashLink>
         </li>
       </ul>
     </header>

@@ -12,17 +12,25 @@ import "../styles/globalStyles.css";
 
 export default function Root() {
   useEffect(() => {
-    const hash = window.location.hash;
-    if (!hash || hash === "#/") return;
+    const handleLoad = () => {
+      const hash = window.location.hash;
+      if (!hash) return;
 
-    const element = document.querySelector(hash);
+      const element = document.querySelector(hash);
 
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop,
-        behavior: "smooth",
-      });
-    }
+      if (element) {
+        window.scrollTo({
+          top: element.offsetTop,
+          behavior: "smooth",
+        });
+      }
+    };
+
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
   }, []);
 
   return (

@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import dishes from "../data/dishes";
 import DishStyles from "../styles/DishStyles";
+import { Link } from "react-router-dom";
 
 export async function loader({ params }) {
   const dish = dishes.find((dish) => dish.id === Number(params.dishId));
@@ -69,9 +70,9 @@ export default function Dish() {
           </div>
 
           <div className="back-button">
-            <a href={"/recipes"} className="btn">
+            <Link to={"/recipes"} className="btn">
               Back to Recipes
-            </a>
+            </Link>
           </div>
         </div>
       </div>

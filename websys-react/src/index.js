@@ -11,7 +11,7 @@ import GlobalStyles from "./styles/GlobalStyles";
 
 const router = createHashRouter([
   {
-    path: "/home",
+    path: "/verdida-viola/",
     element: <Root />,
   },
   {

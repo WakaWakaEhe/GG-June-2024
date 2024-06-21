@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import Root from "./routes/Root";
 import RecipePage from "./routes/RecipePage";
@@ -9,7 +9,7 @@ import Region, { loader as regionLoader } from "./routes/Region";
 
 import GlobalStyles from "./styles/GlobalStyles";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,

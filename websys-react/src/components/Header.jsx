@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import logo from "../img2/logo.webp";
 
 function Head() {
@@ -45,23 +46,25 @@ function Head() {
       {/* Conditional rendering of menu based on isMenuOpen state */}
       <ul ref={navBarRef} className={`navbar ${isMenuOpen && "active"}`}>
         <li>
-          <a href={location.pathname === "/" ? "#" : "/"}>Home</a>
+          <HashLink to={location.pathname === "/" ? "#" : "/"}>Home</HashLink>
         </li>
         <li>
-          <a href="#recipes">Recipes</a>
+          <HashLink to="#recipes">Recipes</HashLink>
         </li>
         <li>
-          <a href={location.pathname === "/" ? "#shop" : "/#shop"}>Regions</a>
+          <HashLink to={location.pathname === "/" ? "#shop" : "/#shop"}>
+            Regions
+          </HashLink>
         </li>
         <li>
-          <a href={location.pathname === "/" ? "#about" : "/#about"}>
+          <HashLink to={location.pathname === "/" ? "#about" : "/#about"}>
             About Us
-          </a>
+          </HashLink>
         </li>
         <li>
-          <a href={location.pathname === "/" ? "#contact" : "/#contact"}>
+          <HashLink to={location.pathname === "/" ? "#contact" : "/#contact"}>
             Contact
-          </a>
+          </HashLink>
         </li>
       </ul>
     </header>

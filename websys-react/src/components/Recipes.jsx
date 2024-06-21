@@ -1,5 +1,6 @@
 import React from "react";
 import rep from "../img2/recipes.webp";
+import { Link } from "react-router-dom";
 
 function Recipes() {
   return (
@@ -25,9 +26,9 @@ function Recipes() {
             spirit of these enchanting regions, bringing the world of Genshin
             Impact to life in your own kitchen.
           </p>
-          <a href={`/recipes`} className="btn">
+          <Link to={`/recipes`} className="btn">
             Recipes
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -12,7 +12,7 @@ import { useEffect } from "react";
 export default function Root() {
   useEffect(() => {
     const hash = window.location.hash;
-    if (!hash) return;
+    if (!hash || hash === "#/") return;
 
     const element = document.querySelector(hash);
 

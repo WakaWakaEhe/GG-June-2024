@@ -40,11 +40,7 @@ const RootStyles = createGlobalStyle`
     gap: 1rem;
   }
 
-  .home-text {
-    flex: 1 1 17rem;
-  }
-
-  .home-img {
+  .home-text, .home-img {
     flex: 1 1 17rem;
   }
 
@@ -291,6 +287,7 @@ const RootStyles = createGlobalStyle`
     #menu-icon {
       display: initial;
     }
+
     .navbar {
       position: absolute;
       top: -5000px;

@@ -26,6 +26,7 @@ export default function Root() {
   return (
     <>
       <RootStyles />
+
       <Head />
       <Home />
       <Shop />

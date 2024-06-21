@@ -70,7 +70,11 @@ function Head() {
           </a>
         </li>
         <li>
-          <a href={location.pathname === "/" ? "#contact" : "/#contact"}>
+          <a
+            href={
+              location.pathname === "/verdida-viola" ? "#contact" : "/#contact"
+            }
+          >
             Contact
           </a>
         </li>

@@ -7,8 +7,6 @@ import RecipePage from "./routes/RecipePage";
 import Dish, { loader as dishLoader } from "./routes/Dish";
 import Region, { loader as regionLoader } from "./routes/Region";
 
-import GlobalStyles from "./styles/GlobalStyles";
-
 const router = createBrowserRouter([
   {
     path: "/verdida-viola/",
@@ -31,11 +29,4 @@ const router = createBrowserRouter([
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <>
-    <GlobalStyles />
-    <RouterProvider router={router} />
-  </>
-);
-
-
+root.render(<RouterProvider router={router} />);

@@ -1,11 +1,13 @@
-import Head from "../components/Header";
-import "../styles/recipe_style.css";
 import { Link } from "react-router-dom";
+
 import dishes from "../data/dishes";
+import Head from "../components/Header";
+import RecipePageStyle from "../styles/RecipePageStyles";
 
 export default function RecipePage() {
   return (
     <>
+      <RecipePageStyle />
       <Head />
       <section class="dishes" id="dishes">
         <h2 class="heading"> Our Recipes </h2>

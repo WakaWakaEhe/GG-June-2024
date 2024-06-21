@@ -1,6 +1,5 @@
 import React from "react";
 import rep from "../img2/recipes.webp";
-import "../styles/style.css";
 
 function Recipes() {
   return (

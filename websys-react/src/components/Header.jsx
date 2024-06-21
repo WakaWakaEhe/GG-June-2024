@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import logo from "../img2/logo.webp";
-import "../styles/style.css";
 
 function Head() {
   // State to manage menu visibility

@@ -6,9 +6,12 @@ import Region from "../components/Regions";
 import About from "../components/About";
 import Contact from "../components/Contact";
 
+import RootStyles from "../styles/RootStyles";
+
 export default function Root() {
   return (
     <>
+      <RootStyles />
       <Head />
       <Home />
       <Shop />

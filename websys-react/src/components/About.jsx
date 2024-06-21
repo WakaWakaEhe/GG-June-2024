@@ -1,6 +1,5 @@
 import React from "react";
 import about from "../img2/about.webp";
-import "../styles/style.css";
 
 function About() {
   return (
@@ -18,8 +17,9 @@ function About() {
           and food lovers alike.
         </p>
         <p>
-        Whether it's the savory delicacies of Liyue, the comforting dishes of Inazuma, 
-        or the exotic flavors of Sumeru, we invite you to embark on a culinary adventure and experience the magic of Teyvat with every bite.
+          Whether it's the savory delicacies of Liyue, the comforting dishes of
+          Inazuma, or the exotic flavors of Sumeru, we invite you to embark on a
+          culinary adventure and experience the magic of Teyvat with every bite.
         </p>
       </div>
     </section>

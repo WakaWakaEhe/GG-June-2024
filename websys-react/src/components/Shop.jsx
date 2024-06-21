@@ -2,7 +2,6 @@ import React from "react";
 import shop1 from "../img2/shop1.webp";
 import shop2 from "../img2/shop2.webp";
 import shop3 from "../img2/shop3.webp";
-import "../styles/style.css";
 
 function Shop() {
   return (

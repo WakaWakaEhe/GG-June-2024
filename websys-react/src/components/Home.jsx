@@ -1,6 +1,5 @@
 import React from "react";
 import home from "../img2/home.webp";
-import "../styles/style.css";
 
 function Home() {
   return (

@@ -11,7 +11,7 @@ import GlobalStyles from "./styles/GlobalStyles";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/home",
     element: <Root />,
   },
   {
@@ -32,8 +32,8 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <>
     <GlobalStyles />
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </>
 );

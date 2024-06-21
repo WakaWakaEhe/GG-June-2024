@@ -140,7 +140,7 @@ const dishes = [
     instructions: [
       "Prepare Rice: Season the rice with a little salt.",
       "Shape Rice: Wet your hands, take a handful of rice, flatten it, add your filling, and shape into a ball or triangle.",
-      "Wrap and Serve:: Wrap with a strip of nori and serve.",
+      "Wrap and Serve: Wrap with a strip of nori and serve.",
     ],
   },
   {

@@ -33,7 +33,7 @@ export default function Region() {
           <span>
             <h2>Liyue · Inazuma · Sumeru</h2>
           </span>
-          <a href={"/"} className="btn">
+          <a href={"/verdida-viola/"} className="btn">
             Back to Home
           </a>
         </div>

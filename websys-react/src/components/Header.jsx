@@ -45,7 +45,7 @@ function Head() {
       {/* Conditional rendering of menu based on isMenuOpen state */}
       <ul ref={navBarRef} className={`navbar ${isMenuOpen && "active"}`}>
         <li>
-          <a href={location.pathname === "/" ? "#" : "/"}>Home</a>
+          <a href={location.pathname === "/verdida-viola/" ? "#home" : "#home"}>Home</a>
         </li>
         <li>
           <a href="#recipes">Recipes</a>
@@ -54,7 +54,7 @@ function Head() {
           <a href={location.pathname === "/" ? "#shop" : "/#shop"}>Regions</a>
         </li>
         <li>
-          <a href={location.pathname === "/" ? "#about" : "/#about"}>
+          <a href={location.pathname === "/verdida-viola" ? "#about" : "/#about"}>
             About Us
           </a>
         </li>

@@ -11,15 +11,16 @@ import { useEffect } from "react";
 
 export default function Root() {
   useEffect(() => {
-    if (window.location.hash && window.location.hash !== "") {
-      const element = document.querySelector(window.location.hash);
+    const hash = window.location.hash;
+    if (!hash) return;
 
-      if (element) {
-        window.scrollTo({
-          top: element.offsetTop,
-          behavior: "smooth",
-        });
-      }
+    const element = document.querySelector(hash);
+
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: "smooth",
+      });
     }
   }, []);
 

@@ -16,14 +16,14 @@ function Region() {
             the vibrant and diverse culinary landscapes of Teyvat. From the
             spicy and robust flavors of Liyue to the delicate and refined tastes
             of Inazuma, each region brings its own unique essence and
-            traditional recipes.{" "}
+            traditional recipes.
           </p>
           <p>
             Join us as we bring the authentic tastes of Genshin Impact’s most
             beloved regions to your table, capturing the essence of each unique
             culture through its traditional cuisine.
           </p>
-          <a href="#" className="btn">
+          <a href="#shop" className="btn">
             Regions
           </a>
         </div>

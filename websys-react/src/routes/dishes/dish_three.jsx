@@ -1,0 +1,99 @@
+import dish3 from "../../img2/dish-3.webp";
+
+export default function DishThree() {
+  return (
+    <div class="container">
+      <div class="recipe-img">
+        <img src={dish3} alt="" />
+      </div>
+
+      <div class="recipe-info">
+        <h1>Mora Meat</h1>
+
+        <div class="recipe-prep-time">
+          <h3>Estimated Time to Serve</h3>
+          <ul>
+            <li>
+              <span>Prep Time</span>: 10 minutes
+            </li>
+            <li>
+              <span>Cook Time</span>: 10 minutes
+            </li>
+            <li>
+              <span>Total Time</span>: 50 minutes
+            </li>
+          </ul>
+        </div>
+
+        <div class="recipe-step">
+          <h2>Ingredients</h2>
+          <ul class="ingredients">
+            <li>
+              <span>250g beef (thinly sliced)</span>
+            </li>
+            <li>
+              <span>2 tbsp soy sauce</span>
+            </li>
+            <li>
+              <span>1 tbsp oyster sauce</span>
+            </li>
+            <li>
+              <span>1 tbsp rice wine</span>
+            </li>
+            <li>
+              <span>1 tsp sugar</span>
+            </li>
+            <li>
+              <span>2 cloves garlic (minced)</span>
+            </li>
+            <li>
+              <span>1 tbsp cornstarch</span>
+            </li>
+            <li>
+              <span>2 tbsp oil</span>
+            </li>
+            <li>
+              <span>Green onions and sesame seeds for garnish</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="recipe-step">
+          <h2>Instructions</h2>
+          <div class="instructions">
+            <div class="item">
+              <div class="num">1.</div>
+              <p>
+                <span>Marinate Beef</span>: Mix soy sauce, oyster sauce, rice
+                wine, sugar, garlic, and cornstarch. Marinate the beef for at
+                least 30 minutes.
+              </p>
+            </div>
+
+            <div class="item">
+              <div class="num">2.</div>
+              <p>
+                <span>Cook Beef</span>: Heat oil in a pan and stir-fry the beef
+                until browned and cooked through.
+              </p>
+            </div>
+
+            <div class="item">
+              <div class="num">3.</div>
+              <p>
+                <span>Garnish and Serve</span>: Garnish with green onions and
+                sesame seeds, then serve hot.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="back-button">
+          <a href="/pages/recipe-page.html" class="btn">
+            Back to Recipes
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}

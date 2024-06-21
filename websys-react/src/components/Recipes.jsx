@@ -22,10 +22,11 @@ function Recipes() {
             brings the diverse tastes of Genshin Impact to your kitchen.
           </p>
           <p>
-          Explore and savor the authentic recipes that capture the essence and spirit of these 
-          enchanting regions, bringing the world of Genshin Impact to life in your own kitchen.
+            Explore and savor the authentic recipes that capture the essence and
+            spirit of these enchanting regions, bringing the world of Genshin
+            Impact to life in your own kitchen.
           </p>
-          <a href="#" className="btn">
+          <a href={`/recipes`} className="btn">
             Recipes
           </a>
         </div>

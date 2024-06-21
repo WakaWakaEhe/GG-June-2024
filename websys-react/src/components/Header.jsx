@@ -31,7 +31,7 @@ function Head() {
   return (
     <header>
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a href="#" className="logo">
+      <a href={"/"} className="logo">
         <img src={logo} alt="" />
       </a>
       <div
@@ -43,7 +43,7 @@ function Head() {
       {/* Conditional rendering of menu based on isMenuOpen state */}
       <ul ref={navBarRef} className={`navbar ${isMenuOpen && "active"}`}>
         <li>
-          <a href="#home">Home</a>
+          <a href={"/"}>Home</a>
         </li>
         <li>
           <a href="#recipes">Recipes</a>

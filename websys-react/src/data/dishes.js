@@ -62,7 +62,7 @@ const dishes = [
     instructions: [
       "Heat Milk:In a saucepan, heat the almond milk with sugar until dissolved.",
       "Add Agar: Dissolve the agar-agar powder in water and add to the almond milk. Bring to a boil and then simmer for 2-3 minutes.",
-      "Flavor</span>: Remove from heat and stir in the almond extract.",
+      "Flavor: Remove from heat and stir in the almond extract.",
       "Set: Pour the mixture into a mold or shallow dish. Allow it to cool and set in the refrigerator for at least 2 hours.",
       "Serve: Cut into cubes and serve with fresh fruit or syrup.",
     ],

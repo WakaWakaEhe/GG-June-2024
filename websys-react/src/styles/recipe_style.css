@@ -1,3 +1,8 @@
+body {
+  background-color: antiquewhite;
+  background-size: cover;
+}
+
 /* Header */
 header {
   position: fixed;
@@ -23,53 +28,23 @@ header {
   width: 40px;
 }
 
-/* Menu Icon */
-#menu-icon {
-  font-size: 24px;
-  cursor: pointer;
-  z-index: 1001;
-  display: none;
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    display: none; /* Hide default navbar on small screens */
+  }
+  #menu-icon {
+    display: block; /* Show menu icon on small screens */
+  }
 }
 
-/* Side Menu */
-.side-menu {
-  position: fixed;
-  top: 0;
-  right: -250px; /* Initially hidden on the right */
-  width: 250px;
-  height: 100%;
-  background: #fff;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  transition: right 0.3s ease; /* Smooth transition */
-}
-
-.side-menu.open {
-  right: 0; /* Slide in from the right */
-}
-
-.side-navbar {
-  display: flex;
-  flex-direction: column;
-  padding-top: 60px;
-}
-
-.side-navbar a {
-  padding: 15px 20px;
-  text-transform: uppercase;
-  font-weight: bold;
+/* Heading Styles */
+.heading {
+  margin-top: 7rem;
+  text-align: center;
   color: var(--second-color);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.navbar {
-  display: flex;
-}
-.navbar a {
-  font-size: 1rem;
-  padding: 11px 20px;
-  color: var(--second-color);
-  font-weight: 600;
+  font-size: 3rem;
+  padding-bottom: 2rem;
   text-transform: uppercase;
 }
 
@@ -129,4 +104,17 @@ header {
 .dishes .box-container .box .btn:hover {
   color: #fff;
   background: var(--second-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .dishes .box-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .dishes .box-container {
+    grid-template-columns: 1fr;
+  }
 }

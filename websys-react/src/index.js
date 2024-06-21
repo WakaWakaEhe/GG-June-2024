@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Root from "./routes/Root";
 import RecipePage from "./routes/RecipePage";
@@ -9,9 +9,9 @@ import Region, { loader as regionLoader } from "./routes/Region";
 
 import GlobalStyles from "./styles/GlobalStyles";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/verdida-viola/",
     element: <Root />,
   },
   {
@@ -32,8 +32,10 @@ const router = createHashRouter([
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <>
     <GlobalStyles />
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </>
 );
+
+

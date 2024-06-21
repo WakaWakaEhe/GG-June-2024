@@ -24,7 +24,7 @@ function Head() {
 
     // Clean up the event listener on component unmount
     return () => {
-      window.removeEventListener("scroll", undefined);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []); // Empty array ensures this effect runs only on mount and unmount
 

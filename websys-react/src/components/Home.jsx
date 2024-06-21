@@ -13,9 +13,6 @@ function Home() {
         <span>
           <h2>Liyue · Inazuma · Sumeru</h2>
         </span>
-        <a href="#" className="btn">
-          Learn More
-        </a>
       </div>
       <div className="home-img">
         <img src={home} alt="" />

@@ -138,6 +138,7 @@ header {
   overflow: hidden;
   text-align: center;
   padding: 1rem;
+  padding-bottom: 3rem;
   height: 400px;
   display: flex;
   flex-direction: column;

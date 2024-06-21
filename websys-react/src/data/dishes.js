@@ -8,13 +8,18 @@ import dish7 from "../img2/dish-7.webp";
 import dish8 from "../img2/dish-8.webp";
 import dish9 from "../img2/dish-9.webp";
 
+import liyueRegion from "../img2/recipe-bg-liyue.webp";
+import inazumaRegion from "../img2/recipe-bg-inazuma.webp";
+import sumeruRegion from "../img2/recipe-bg-sumeru.webp";
+
 const dishes = [
   {
+    id: 1,
     image: dish1,
     title: "Golden Shrimp Balls",
     description:
       "An exquisite blend of tender shrimp wrapped in a golden, crispy coating.",
-    link: "/recipes/dish-one",
+    regionImg: liyueRegion,
     prepTime: "15 minutes",
     cookTime: "10 minutes",
     totalTime: "25 minutes",
@@ -37,11 +42,12 @@ const dishes = [
     ],
   },
   {
+    id: 2,
     image: dish2,
     title: "Almond Tofu",
     description:
       "A traditional desert with a smooth, delicate texture and infused with almond flavor.",
-    link: "/recipes/dish-two",
+    regionImg: liyueRegion,
     prepTime: "10 minutes",
     cookTime: "2 hours",
     totalTime: "2 hours and 10 minutes",
@@ -62,11 +68,12 @@ const dishes = [
     ],
   },
   {
+    id: 3,
     image: dish3,
     title: "Mora Meat",
     description:
       "A hearty dish that combines succulent meat with rich flavors.",
-    link: "/recipes/dish-three",
+    regionImg: liyueRegion,
     prepTime: "10 minutes",
     cookTime: "10 minutes",
     totalTime: "50 minutes",
@@ -88,11 +95,12 @@ const dishes = [
     ],
   },
   {
+    id: 4,
     image: dish4,
     title: "Omelette Rice",
     description:
       "A harmonious dish that combines fluffy rice with a golden omelette.",
-    link: "/recipes/dish-four",
+    regionImg: inazumaRegion,
     prepTime: "10 minutes",
     cookTime: "10 minutes",
     totalTime: "20 minutes",
@@ -114,11 +122,12 @@ const dishes = [
     ],
   },
   {
+    id: 5,
     image: dish5,
     title: "Rice Ball",
     description:
       "Filled with delicious ingredients and sweet rice, it's a favorite snack among Inazumans.",
-    link: "/recipes/dish-five",
+    regionImg: inazumaRegion,
     prepTime: "15 minutes",
     cookTime: "10 minutes",
     totalTime: "25 minutes",
@@ -135,11 +144,12 @@ const dishes = [
     ],
   },
   {
+    id: 6,
     image: dish6,
     title: "Tricolor Dango",
     description:
       "Sweet and chewy dango, it's a traditional treat featuring three colored dumplings.",
-    link: "/recipes/dish-six",
+    regionImg: inazumaRegion,
     prepTime: "20 minutes",
     cookTime: "10 minutes",
     totalTime: "30 minutes",
@@ -157,11 +167,12 @@ const dishes = [
     ],
   },
   {
+    id: 7,
     image: dish7,
     title: "Pita Pocket",
     description:
       "Savor the classic taste of a Pita Pocket, filled with savory ingredients for a satisfying meal.",
-    link: "/recipes/dish-seven",
+    regionImg: sumeruRegion,
     prepTime: "15 minutes",
     cookTime: "15 minutes",
     totalTime: null,
@@ -183,11 +194,12 @@ const dishes = [
     ],
   },
   {
+    id: 8,
     image: dish8,
     title: "Tahchin",
     description:
       "A Persian-inspired dish of layered rice and tender meat or fish.",
-    link: "/recipes/dish-eight",
+    regionImg: sumeruRegion,
     prepTime: "20 minutes",
     cookTime: "1 hour and 20 minutes",
     totalTime: "1 hour and 20 minutes",
@@ -210,10 +222,11 @@ const dishes = [
     ],
   },
   {
+    id: 9,
     image: dish9,
     title: "Minty Bean Soup",
     description: "A light and nutritious blend of green beans and mint.",
-    link: "/recipes/dish-nine",
+    regionImg: sumeruRegion,
     prepTime: "10 minutes",
     cookTime: "20 minutes",
     totalTime: "30 minutes",

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+// import { HashLink } from "react-router-hash-link";
 import logo from "../img2/logo.webp";
 
 function Head() {
@@ -46,33 +46,33 @@ function Head() {
       {/* Conditional rendering of menu based on isMenuOpen state */}
       <ul ref={navBarRef} className={`navbar ${isMenuOpen && "active"}`}>
         <li>
-          <HashLink
-            to={
-              location.pathname === "/verdida-viola" ? "#" : "/verdida-viola/"
+          <a
+            href={
+              location.pathname === "/verdida-viola" ? "#" : "/verdida-viola"
             }
           >
             Home
-          </HashLink>
+          </a>
         </li>
         <li>
-          <HashLink to="#recipes">Recipes</HashLink>
+          <a href="#recipes">Recipes</a>
         </li>
         <li>
-          <HashLink to={location.pathname === "/" ? "#shop" : "/#shop"}>
+          <a href={location.pathname === "/verdida-viola" ? "#shop" : "/#shop"}>
             Regions
-          </HashLink>
+          </a>
         </li>
         <li>
-          <HashLink
-            to={location.pathname === "/verdida-viola" ? "#about" : "/#about"}
+          <a
+            href={location.pathname === "/verdida-viola" ? "#about" : "/#about"}
           >
             About Us
-          </HashLink>
+          </a>
         </li>
         <li>
-          <HashLink to={location.pathname === "/" ? "#contact" : "/#contact"}>
+          <a href={location.pathname === "/" ? "#contact" : "/#contact"}>
             Contact
-          </HashLink>
+          </a>
         </li>
       </ul>
     </header>

@@ -9,7 +9,7 @@ import Region, { loader as regionLoader } from "./routes/Region";
 
 const router = createBrowserRouter([
   {
-    path: "/verdida-viola/",
+    path: "/verdida-viola",
     element: <Root />,
   },
   {

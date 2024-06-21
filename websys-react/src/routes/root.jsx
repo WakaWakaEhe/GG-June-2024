@@ -8,6 +8,7 @@ import Contact from "../components/Contact";
 
 import RootStyles from "../styles/RootStyles";
 import { useEffect } from "react";
+import "../styles/globalStyles.css";
 
 export default function Root() {
   useEffect(() => {

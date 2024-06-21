@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 import regions from "../data/regions";
 import RegionStyles from "../styles/RegionStyles";
@@ -18,6 +19,13 @@ export default function Region() {
     if (id === 3) return "last-article";
     return undefined;
   };
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 
   return (
     <>

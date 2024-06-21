@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import dishes from "../data/dishes";
 import DishStyles from "../styles/DishStyles";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export async function loader({ params }) {
   const dish = dishes.find((dish) => dish.id === Number(params.dishId));
@@ -10,6 +11,13 @@ export async function loader({ params }) {
 
 export default function Dish() {
   const { dish } = useLoaderData();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 
   return (
     <>

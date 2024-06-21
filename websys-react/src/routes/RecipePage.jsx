@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import dishes from "../data/dishes";
@@ -5,6 +6,13 @@ import Head from "../components/Header";
 import RecipePageStyle from "../styles/RecipePageStyles";
 
 export default function RecipePage() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+
   return (
     <>
       <RecipePageStyle />

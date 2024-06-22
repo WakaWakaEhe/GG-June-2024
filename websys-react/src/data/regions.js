@@ -1,4 +1,4 @@
-import liyueSymbol from "../img2/region-inazuma-symbol.webp";
+import liyueSymbol from "../img2/region-liyue-symbol.webp";
 import inazumaSymbol from "../img2/region-inazuma-symbol.webp";
 import sumeruSymbol from "../img2/region-sumeru-symbol.webp";
 
